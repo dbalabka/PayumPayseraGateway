@@ -28,6 +28,7 @@ class Api
     {
         $fields['projectid'] = $this->options['projectid'];
         $fields['sign_password'] = $this->options['sign_password'];
+        $fields['payment'] = $this->options['payment'];
         $this->options['test'] ? $fields['test'] = 1 : $fields['test'] = 0;
         $authorizeTokenUrl = $this->getApiEndpoint();
         $data = WebToPay::buildRequest($fields);

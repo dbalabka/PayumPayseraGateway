@@ -32,6 +32,7 @@ class PayseraGatewayFactory extends GatewayFactory
             $config['payum.default_options'] = array(
                 'projectid' => '',
                 'sign_password' => '',
+                'payment' => '',
                 'test' => true,
             );
             $config->defaults($config['payum.default_options']);
